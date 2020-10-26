@@ -1,0 +1,26 @@
+<div id="wrap">
+  <span class="title"
+    >Hello! <% if( locals.user ) { %> <%= user.email %> <% } %>
+  </span>
+
+  <div class="user">
+    <input
+      type="button"
+      class="btn"
+      onclick=" location.href='/login'"
+      value="LOGIN"
+    />
+    <input
+      type="button"
+      class="btn"
+      onclick=" location.href='/signup'"
+      value="SIGNUP"
+    />
+  </div>
+  <input
+    type="button"
+    class="btn"
+    onclick=" location.href='/logout'"
+    value="LOGOUT"
+  />
+</div>
